@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% block content%}
+<h2>Archivos</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for file in files %}
+    <tr>
+        <td>{{ file.title}}</td>
+        <td>{{ file.p2 }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
